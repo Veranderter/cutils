@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "cutils",
+	"version": "${version}",
+	"name": "CUtils",
+	"description": "cUtils - Minecraft, But Better",
+	"authors": [
+		"Veranderter"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/cutils/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.veranderter.CUtils"
+		],
+		"client": [
+			"dev.veranderter.cUtilsClient"
+		],
+		"fabric-datagen": [
+			"dev.veranderter.CUtilsDataGenerator"
+		]
+	},
+	"mixins": [
+		"cutils.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.1",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
